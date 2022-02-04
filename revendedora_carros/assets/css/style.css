@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container h2{
+    text-align:center;
+    margin: 20px auto;
+}
+
+table{
+    width: 100%;
+    margin: 20px auto;
+}
+
+tr{
+    background-color: #ccc;
+}
+
+th, td{
+    padding: 10px;
+    position: relative;
+    transition: all .3s;
+}
+
+td:hover{
+    transform: scale(1.25, 1.25);
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(41,180,237);
+    z-index: 2000
+}
+
+thead tr{
+    position: sticky;
+    top: 0px;
+    z-index: 1500;
+
+}
+
+button{
+    margin: 0 20px;
+    background-color:rgb(41,180,237);
+    color: white;
+    padding: 5px;
+    border:none;
+    position: relative;
+    transition: all .6s;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+}
+
+.formulario, .opcoes{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #ccc;
+    height: 12vh;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.opcoes{
+    justify-content: center;
+    height: auto;
+}
+
+.formulario input, 
+.formulario select
+{
+    height: 35px;
+    padding: 5px;
+    width: 25%;
+    min-width: 200px;
+}
+
+thead tr{
+    background-color: rgb(41,180,237);
+    color: white;
+}
+
+.grupo-opcoes{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 0 10px;
+    font-size: 1.2em;
+    background-color: #222;
+    color: white;
+}
+
+.grupo-opcoes input[type='checkbox']{
+    margin-right: 5px;
+}
+
+show-col{
+    display: inline-block;
+}
+
+hidden-col{
+    display: none;
+}
+
+/* Animações */
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.075);
+    }
+    100%{
+        transform: scale(1.15);
+    }
+}
