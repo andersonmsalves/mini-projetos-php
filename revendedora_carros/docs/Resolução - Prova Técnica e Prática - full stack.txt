@@ -1,0 +1,366 @@
+PHP:
+
+1- Qual é a maneira correta de declara uma variável em PHP?
+
+	Alternativa correta: (a).
+
+	Justificativa:
+
+	A opção correta é a (a), pois toda variavel em PHP deve começar com o simbolo de $, seguida de _ ou uma letra de a a até z, sendo o nome da variavel significativo como nome ao inves de apenas n. Como boa pratica de nomeação de variavel utilizr o camelCase ou snake_case. Além disso, toda instrução em PHP deve terminar com ;, senão da erro. Em Javascript e Python a utilização de ; é opcional.
+
+2- como você pode incluir um script dentro de outro?
+
+	Alternativa correta: (b).
+
+	Justificativa:
+
+	A correta é a letra (b) require_once ('scriptB.php'). O parenteses neste caso não causa efeito algum. Como esta escrito apenas 'scriptB.php' o referido arquivo será buscado no diretório atual. o comando require_once faz ser importado apenas uma vez o arquivo solicitado, mas diferente do include_once, caso o arquivo não exista, nenhuma instrução abaixo de require_once será executada.
+
+3- Quais são as estruturas de ciclo de repetição que existem no PHP?
+
+	Corretas: (a), (d) e (e).
+
+	Justificativa:
+
+	As opções corrretas para esta pergunta são letras (a) While, (d) Foreach e (e) For. O While é uma estrutura de repetição utilizada normalmente para iterar sobre um número indefinido de vezes até que uma condição se torne verdadeira ou falsa, como exemplo, inseração de uma pessoa em uma lista de convidados/clientes. O For é um loop normalmente utilizado quando se sabe o número de interações previamente, como exemplo, construir uma tabuada. Enquanto o loop Foreach é utilizado para iterar sobre array e estruturas similares, nesse sentido trabalhar com iteração com Foreach é bastante útil em trabalhar na manipulação de arrays.
+
+	As instruções/statements switch e if são comandos de desvio de fluxo condicional.
+
+4- Qual é a diferença entre um cookie e uma variável de sessão?
+
+	Alternativa correta: (a).
+
+	Justificativa:
+
+	Resposta correta é a opção (c) A sessão é uma forma de recuperar informações entre páginas dentro do servidor, ela fica ativa enquanto o navegador estiver aberto. Enquanto cookie a informação é guardada no computador da pessoa e, ao acessar novamente o site/sistema o cookie facilita o carregamento de informações.
+
+5- Descreva como funciona a recursão?
+
+	Alternativa correta: (a).
+
+	Justificativa:
+
+	A resposta correta é a letra (a) É quando uma função chama a si mesma. Um exemplo desse tipo de função é quando queremos calcular o fatorial de um número.
+
+	function fat($num){
+
+		if($num == 0){
+			return 1;
+		}else{
+			return $num * fat($num - 1);
+		}
+	}
+
+6- Que tipos de array existem no PHP/
+
+	Alternativa correta: (c).
+
+	Justificativa:
+
+	A opção correta é a letra (c) Os dois anteriores. Em PHP existem array numericos como exemplo,
+
+	$numeros = [2, 5, 7, 9, 11];
+
+	Também podem ter array associativos, com key/chaves associando a values/valores. Como exemplo os dados de uma pessoa.
+
+	$pessoa = new Array(nome => "Anderson", idade => 31, email => 'andersonmsalves@gmail.com');
+
+7- Por favor, indique quais das seguintes estruturas condicionais existem no php
+
+	As opções corretas para essa pergunta são as letras (b) swicth e (c) If. A estrutura swith é um pouco mais limitada por permite comparar apenas uma variavel/valor com os respectivos cases. Nesse sentido, não é possível comparar expressões. No entanto, a estrutura switch é um pouco mais rápida do que a estrutura if. Um exemplo dela sendo utilizada segue abaixo:
+
+	$dia = 'quarta-feira';
+	switch($dia){
+		case 'segunda':
+		case 'terca':
+		case 'quarta':
+		case 'quinta':
+		case 'sexta':
+			echo 'Dia de semana';
+			break;
+		case 'sábado':
+		case 'domingo':
+			echo 'Fim de semana';
+			break;
+		default:
+			echo 'Valor inválido';
+	}
+
+	Enquanto a estrutura if é utilizada para fazer determinada ação se a condição dentro do () for verdadeira, por exemplo.
+
+	$userActive = false;
+
+	if($userActive){
+		echo 'Usuário esta ativo';
+	}else{
+		echo 'Usuário não esta ativo';
+	}
+
+	$nota = 7.5;
+	$frequencia = 75;
+	$situacaoAluno = 'Reprovado';
+
+	if($nota > 7 && $frequencia > 70){
+		$situcaoAluno = 'Aprovado';
+	}
+
+8- Qunado o php considera uma expressão como verdadeira?
+
+	Alternativa correta: letra (a) Quando for diferente de 0.
+
+	Justificativa:
+
+	Qualquer valor diferente de 0, null, false, '' é considerado verdadeiro em PHP. Por exemplo, mesmo que tenhamos uma expressão retornando valores negativos como -1, o bloco será executado como sendo verdadeiro. Como o exemplo a seguir:
+
+	$num = -1;
+
+	if($num){
+		echo 'Condição verdadeira';
+	}
+
+9- Escreva duas maneiuras diferentes de pecorrer um array?
+
+	PHP:
+	<?php
+        $listaCompras = ['arroz', 'feijao', 'frango', 'leite', 'cafe', 'pão'];
+
+        $length = sizeof($listaCompras);
+
+        for($i = 0; $i < $length; $i++){
+
+            echo "$listaCompras[$i]<br/>";           
+        }
+
+        foreach($listaCompras as $item){
+
+            echo $item . "<br/>";
+        }
+    
+    ?>
+
+    Javascript:
+    	var listaCompras = ['arroz', 'feijao', 'frango', 'leite', 'cafe', 'pão'];
+
+    	vat tamLista = listaCompras.length;
+
+    	for(let i = 0; i < tamLista; i++){
+
+    		console.log(listaCompras[i]);
+    	}
+
+    	for(let item of listaCompras){
+
+    		console.log(item);
+    	}
+
+10- O que significa e o que é MVC?
+
+	Alternativa correta é a letra (c).
+
+	Justificativa:
+
+	MVC é a abreviatura para Model View Control.
+
+	MVC é o estilo de organização de criação de sistemas em PHP ou em outras linguagens. Resumidamente é um estilo de desenvolvimento de sistemas baseado em camadas. Onde a camada Model é responsável pelos dados da aplicação. A camada View é responsavel pelas regras de como será mostrado esses dados. Enquanto a camada Control traz o conjunto de regras que controlará os dados e fará o gerenciamento da aplicação/sistema.
+
+11- Por favor, indique quais dos seguintes são frameworks PHP?
+
+	Alternativas corretas: letras (a), (b) e (e).
+
+	Justificativa:
+
+	Angular é framework de Javascript. Coffee Script não conheço. Joomla é framework para criação de sites voltado para a parte de front-end. 
+
+12- Qual é a diferença entre privado e protegido no contexto de uma classe PHP?
+
+	privado: atributos e métodos encapsulados como privado só podem ser acessados por atributos e metodos dentro da classe.
+
+	Enqunato atributos e metodos protegidos podem ser acessados por outras classes que extendam a classe pai.
+
+	Em outras palavras a grande diferença é quanto ao escopo/visibilidade dos atributos e metodos em diferentes regiões.
+
+13- Qual é a diferença entre padding e margin?
+
+	A alternativa correta são as alternativas (a) e (b).
+
+	Justificativa:
+
+	As alternativas a e b estão duplicadas.
+
+	Padding é o espaçamento entre o conteudo e a sua borda. Enquanto margin é a distância entre um elemento e outro. 
+
+	Por exemplo, se queremos um botão com um grande, podemos alterar o width e height, mas o que da um aspecto mais interessante é o padding.
+
+	button{
+		width: 80px;
+		height: 35px;
+		padding: 5px;
+		margin: 10px auto; /* Espaçamento em cima e baixo de 10px e alinhado ao centro do elemento pai*/
+	}
+
+14- O que a posição absoluta faz?
+
+	A alternativa correta é a letra (a).
+
+	Justificativa:
+
+	position: absolute; /* Faz com que o referencial seja o elemento body e não mais o elemento pai. Normalmente utilizamos position absolute para fixar algum elemento em posição fixa, por exemplo, uma janela de chat localizada no canto inferior direito. */
+
+	Por exemplo: uma dive no canto direito inferior com um background-color cinza claro de tamnaho width: 250px e altura de 30% da altura da janela do navegador.
+
+	.box-chat{
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		width: 250px;
+		height: 30vh;
+		background-color: #d3d3d3;
+	}
+
+14.2 - Como você pode trabalhar com design responsivo (vários tamanhos de tela) em css?
+
+	A alternativa correta é a letra (c).
+
+	Justificativa:
+
+	Utilizamos as chamadas media querys para trazer responsividade aos sites. De forma resumida, as media querys alteram as propriedades de css para certos tamanho de tela. Por exemplo,
+
+	@media only screen and (max-width: 400px){
+		body{
+			color: white;
+			backgrond-color: black;
+		}
+
+		main{
+			width: 100%;
+		}
+	}
+	@media only screen and (min-width) and (max-width: 768px){
+		body{
+			color: black;
+			backgrond-color: #d3d3d3;
+		}
+		main{
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+
+MySQL:
+
+15- Como podemos executar uma instrução MySQL a partir do PHP?
+
+	Primeiro criamos uma query sql do tipo "SELECT * FROM tabela_selecionada WHERE campo = 'valor' ";
+
+	Depois essa query é para algum handle manipular o banco de dados de alguma forma como:
+
+	$sql = "SELECT * FROM tabela_selecionada WHERE campo = 'valor' ";
+	$pdo->query($sql);
+
+	Então será retornado algum valor ou processado algo dentro do banco de dados baseado na query passada.
+
+16- Selecione os tipos de dados básicos que o MySQL Suporta?
+
+	Alternativas corretas são as letras: (a) VARCHAR, (b)INT, (c) BOOLEAN, (e) DATE e (f)FLOAT.
+
+	Justificativa:
+
+	VARCHAR -> Armazena cadeias de caracteres, como exemplo, nome, endereco, email, cpf;
+
+	INT -> Armazena numeros indeiros como ID, Idade.
+
+	BOOLEAN -> armazena valores verdadeiros ou falso.
+
+	DATA -> Armazena valores referentes como data.
+
+	FLOAT -> Armazena valores com ponto flutuante, como exemplo, salário, peso, altura, percentual_desconto, percentual_reajuste, etc.
+
+17- Para que servem as instruções GROUP BY e ORDER BY?
+
+	Alternativa correta é a letra (c) Organize os resultados de acordo com os campos indicados.
+
+	Justificativa:
+
+	ORDER BY faz a ordenação de uma query baseado em algum campo. Por padrão a ordenação é crescente(ASC), mas pode ser feita em ordem decrescente com a instrução ORDER BY DESC, por exemplo,
+
+	SELECT * FROM produtos ORDER BY quatidade_vendas DESC WHERE quantidade_vendas > 1000;
+
+	Enquanto GROUP BY como o nome sugere faz o agrupamento de resultados de uma query baseado em um campo, por exemplo,
+
+	SELECT COUNT(*) as contagem FROM clientes_banco GROUP BY tipo_cartao; 
+
+18- Qual é a diferenças entre LEFT JOIN e INNER JOIN?
+
+	Ambas as instruções são parecidas, pois fazem algo similar, que é juntar duas tabelas. O INNER JOIN junta duas tabelas quando as condições passadas são atendidas em ambas tabelas. Enquanto LEFT JOIN faz a junção de tabelas, priorizando a tabela da esquerda, mostrando todos os resultados que atendam ao filtro na tabela da esquerda, mesmo que não tenha correspondência na direira. Existe também o RIGHT JOIN que faz algo contrário ao LEFT JOIN, mas normamlemnete RIGHT JOIN é pouco utilizado (Segundo o prof. Bonieky Larceda, em conteudo do curso PHP do zero ao profissional).
+
+19- Tendo a tabela Fabric(tecido) com a seguinte estrutura:
+	id | color | width | waterproof(à prova d'água)
+
+	E a função getFabric:
+	function getFabric($mysqli, $waterProof = 0){
+
+		$query = "SELECT * FROM fabric WHERE waterproof = 0 OR waterproof = " . $waterProof;
+
+		return $mysqli->query($query);
+	}
+
+	Explique o que ou quais registro a função retorna em cada uma das seguintes chamadas.
+
+	Resolução:
+
+	A tabela fabric tem 4 campos(id, color, width, waterproof). A função getFabric recebe dois parametros um obrigatório ($mysqli, dados da conexao) e um opcional ($waterProof = 0).
+
+	A função cria uma $query sql personlaizada baseada no parametro opcional passado $waterProof. Nesse sentido, o objetivo da função getFabric é retornar todos os registros que tem o campo waterprof = 0 ou waterprof = valorPassadoParaAFuncao.
+
+	O retorno da função são todos os campos(*) da tabela fabric que siguam a query sql anteriormente explicada.
+
+20- Escreva um código ou algoritmo que obtenha números primos de 1 a 1000(um número primo é aquele que só é divisível por 1 e por ele mesmo).
+
+	$numerosPrimos = [];
+
+	function getPrimos($limite){
+
+		if($limite >= 1){
+
+			for($i = 1; $i <= $limite; $i++){
+
+				if(ehPrimo($i)){
+					array_push($numerosPrimos, $i);
+				}
+			}
+
+		}else{
+			return false;
+		}
+	}
+
+	function ehPrimo($numero){
+
+		$numeroDivisores = 0;
+
+		for($i = 1; $i<=$numero; $i++){
+			if($numero % i == 0){
+				$numerosDivisores++;
+			}
+		}
+
+		if($numerosDivisores == 2){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	function showPrimos(){
+
+		foreach($numerosPrimos as $numeroPrimo){
+			echo $numeroPrimo . "<br/>"
+		}
+	}
+
+	function main(){
+
+		getPrimos(1000);
+		showPrimos();
+	}
