@@ -1,0 +1,16 @@
+@media only Screen and (max-width: 900px){
+    .container{
+        width: calc(100% - 16px);
+        margin: 10px auto;
+    }
+
+    .conteudo-site{
+        display: block;
+    }
+
+    aside, main{
+        display: block;
+        width: 95%;
+        margin: 10px auto;
+    }
+}

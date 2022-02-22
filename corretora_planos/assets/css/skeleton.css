@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 50px auto;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 100px);
+    background-color: #2C3333;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+}
+
+/*Configurações do Header*/
+.img-header{
+    height: 50vh;
+    background-image: URL("../resources/images/contrato_01.jpg");
+    background-size: cover;
+    background-position: 0px -120px;
+}
+
+.img-header img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+}
+
+header nav{
+    width: calc(100% - 150px);
+    height: 10vh;
+    background-color: #395B64;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#relogio{
+    display: inline-block;
+    color: #F5F2E7;
+    width: 20%;
+}
+
+header nav ul{
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+
+}
+
+header nav ul li:hover{
+    background-color: #2666CF;
+}
+
+li a{
+    color: #F5F2E7;
+    text-decoration: none;
+}
+
+.conteudo-site{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+aside, main{
+    background-color: #F5F2E7;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+aside{
+    width: 300px;
+    text-align: center;
+}
+
+aside input{
+    height: 35px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    padding: 4px;
+    text-align: center;
+    width: 90%;
+    margin: 5px auto;
+}
+
+aside button{
+    height: 35px;
+    padding: 4px;
+    background-color: #2666CF;
+    color: #F5F2E7;
+    position: relative;
+    transition: all 0.5s;
+    width: 50%;
+    margin: 5px auto;
+    font-size: 1.2em;
+}
+
+aside button:hover{
+    transform: scale(1.25, 1.25);
+}
+
+main{
+    width: calc(100% - 350px);
+}
+
+main h2{
+    color: #2666CF;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    margin: 10px auto;
+    color: #F5F2E7;
+    font-style: italic;
+}
+
+.active{
+    background-color: #2666CF;
+}
+
+
+/* Formulario contato*/
+
+main form{
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #2C3333;
+}
+
+main input, main select{
+    display: block;
+    height: 35px;
+    width: 80%;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+main select{
+    background-color: #2C3333;
+    color: #F5F2E7;
+}
+
+form button{
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    background-color: #2666CF;
+    color: #F5F2E7;
+    position: relative;
+    transition: all 0.6s;
+    font-size: 1.2em;
+}
+
+form button:hover{
+    transform: scale(1.10, 1.10);
+}
+
+form textarea{
+    display: block;
+    margin: 5px auto;
+    min-width: 80%;
+    max-width: 80%;
+    padding: 10px;
+    min-height: 150px;
+    max-width: 150px;
+    overflow-y: auto;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d3d3d3;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.box-image{
+    width: 40%;
+    border: 5px solid #395B64;
+    overflow: hidden;
+}
+
+.box-content{
+    width: 50%;
+}
+
+.box-image img{
+    width: 100%;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.box-image img:hover{
+    transform: scale(1.35, 1.35);
+}
+
+.small-img{
+    width: 25%;
+}
+
+.middle-content{
+    width: 75%;
+}
+
+#relogio{
+    color: #F5F2E7;
+    width: 120px;
+}
+
+/* Implementação 18/02/2022*/
+/*<div class="header-content" style="display:flex; justify-content: space-around;">*/
+
+.header-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-content-complement{
+    background-color: #395B64;
+    color: #F5F2E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+}
+
+main form textarea{
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+main table{
+    width: 90%;
+    margin: 20px auto;
+}
+
+main table caption{
+    color: #2666CF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+main table th{
+    background-color: #2C3333;
+    color: white;
+}
+
+main table th, main table td{
+    height: 35px;
+    padding: 15px;
+    position: relative;
+    transition: all 0.6s;
+}
+
+main table td{
+    background-color: #d3d3d3;
+    text-align: center;
+    font-weight: bold;
+}
+
+main table#faixas-planos{
+    width: 50%;
+}
+
+main h3{
+    color: #2666CF;
+    font-size: 1.4em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+main p{
+    width: 75%;
+    font-size: 1.2em;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #2C3333;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.6s;
+}
+
+main p:hover, main td.td-description:hover{
+    background-color: #2C3333;
+    border: 2px solid #2666CF;
+    border-radius: 0px;
+    transform: scale(1.25, 1.25);
+    color:#F5F2E7;
+    z-index: 1000;
+}
+
+table caption{
+    margin-bottom: 15px;
+}
