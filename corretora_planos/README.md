@@ -1,5 +1,4 @@
 
-<img src="https://www.planium.io/wordpress/wp-content/uploads/2018/11/logo-Planium-06.svg" width="250" height="100">
 **[Especificações para o teste]**
 
 **Observações:**
@@ -27,9 +26,7 @@
     - Idade de cada beneficiário
     - Nome de cada beneficiário
     - Registro do plano escolhido (deve ser um dos registros listados na tabela de plano)
-      - Caso o usuário liste um registro inexistente, deve mostrar mensagem de erro.
-
-
+     - Caso o usuário liste um registro inexistente, deve mostrar mensagem de erro.
 
 5. Essa API deverá ler a tabela de Plano e a tabela de Preço, e retornar:
     - Preço de cada beneficiário para o plano escolhido, juntamente com a sua idade.
@@ -42,6 +39,5 @@
 
 7. Ao término, dê reply no e-mail que você originalmente recebeu com o link do seu repositório no [GitHub](https://github.com/).
   - Tempo total: 5 dias após o envio do teste.
-
 
 **Good luck and have fun :)**
